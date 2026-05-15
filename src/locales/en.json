@@ -1,0 +1,62 @@
+{
+  "header": {
+    "hero": "Home",
+    "about": "Company",
+    "show": "Show",
+    "gallery": "Gallery",
+    "previousEvents": "Festivals",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "THE COMPANY",
+    "text1": "Jeremías Terribile was born in Buenos Aires. In 2012, he began training as a juggler, unicyclist, and stilt walker. <br>A trip through Latin America brought him to his first audiences. Since then, he has explored clowning through workshops, seminars, and international circus conventions, learning from teachers from all over the world. <br>Today, he works as an actor, host, and clown in theaters, cultural centers, and conventions. He performs different solo shows at festivals around the world and entertains at private events for both children and adults. This young artist continues to grow and discover his clown on stages of all kinds."
+  },
+  "show": {
+    "title": "THE SHOW",
+    "text1": "There is a line that goes through day to day. An invisible thread that holds the daily (im)balance.",
+    "text2": "The appearance of a clown into the scene can make that thread change, turn, tangle, loosen and tighten until shears, leaving in the air an emptiness that is filled with the <strong>laughs</strong> of whom witnessed that unique moment.",
+    "text3": "<strong>Jeruncio</strong>, with his mischief and charisma, invites us to enter his universe, generating a fleeting but close bond. Everyone, for a moment, knows each other sharing the laughs and amazement.",
+    "text4": "Will apply juggling techniques, improvisation with the audience and balance on his 1.70 meter unicycle with one goal only: <strong>amuse and surprise</strong>.",
+    "dossierButton": "Artistic Dossier",
+    "dossierFile": "/files/jeruncio-dossier-en.pdf"
+  },
+  "gallery": {
+    "title": "GALLERY",
+    "more": "More"
+  },
+  "previousEvents": {
+    "title": "FESTIVALS",
+    "events": {
+      "title1": "China",
+      "title2": "India",
+      "title3": "Argentina",
+      "title4": "Italy",
+      "title5": "Spain",
+      "title6": "Uruguay",
+      "text6": "Summer Tour"
+    }
+  },
+  "dataSheet": {
+    "title": "TECHNICAL SPECIFICATIONS",
+    "text": "<ul><li>Indoor or outdoor show</li><li>40 minutes long</li><li>Minimum scenic space: 4m x 4m x 4m</li><li>Assembling time: 15 minutes</li><li>Disassembling time: 10 minutes</li><li><strong>Show for all ages</strong></li></ul>"
+  },
+  "contact": {
+    "title": "CONTACT ME",
+    "labelMail": "E-mail",
+    "mailProtection": "Your e-mail won't be shared with anybody.",
+    "labelName": "Name",
+    "labelMessage": "Your message",
+    "send": "Send",
+    "sending": "Sending...",
+    "errorMessageEmail": "Please use a valid email.",
+    "errorMessageName": "This field cannot be left empty.",
+    "errorMessageContent": "The message must be at least 10 characters long.",
+    "cooldownTimeAlert": "Please wait a minute before sending another message.",
+    "formSuccess": "Email was sent successfully! We'll respond to you as soon as possible.",
+    "formError": "Something went wrong. Please, wait a minute and try again."
+  },
+  "footer": {
+    "company": "Jeruncio Company",
+    "design": "Web Design: Ignacio Lopez"
+  }
+}

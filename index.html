@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="src/assets/img/icons/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compañía Jeruncio</title>
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+      <img src="src/assets/videos/shoe-animation/shoe-animation.gif" alt="Animación de carga" />
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  <style>
+    :root {
+      --pink-color: #e09eb3;
+      --yellow-color: #f4c846;
+      --light-color: #fff6ea;
+      --body-bg-color: var(--pink-color);
+    }
+
+    body {
+      background-color: var(--body-bg-color);
+    }
+
+    h1 {
+      font-family: 'Patrick Hand', cursive;
+      font-weight: 900;
+      font-size: 5em;
+      color: var(--yellow-color);
+      text-shadow: 5px 5px 0 #0000007a;
+      letter-spacing: 0.2em;
+      text-wrap: wrap;
+      width: fit-content;
+      background-color: transparent;
+    }
+
+    h2 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 3em;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+
+    h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(1.1em, 2vw + 1em, 1.8em);
+      letter-spacing: 0.1em;
+    }
+    p {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .preloader {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .preloader img {
+      max-width: 80vw;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+  </style>
+</html>
