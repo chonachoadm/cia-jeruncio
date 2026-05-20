@@ -5,7 +5,7 @@ export default {
     name: "AppHero",
     data() {
         return {
-            videoDesktop: "bg-video-jeruncio-desktop-2.mp4",
+            videoDesktop: "bg-video-jeruncio-desktop.mp4",
             videoMobile: "bg-video-jeruncio-mobile.mp4",
             isMobile: window.innerWidth < 768,
         }
