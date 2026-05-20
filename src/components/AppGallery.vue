@@ -50,9 +50,18 @@ export default {
                         <div v-for="(group, index) in groupedImages" :key="index" class="carousel-item"
                             :class="{ active: index === 0 }">
                             <div class="mx-auto d-flex justify-content-between gap-4">
-                                <img v-for="img in group" :key="img" :src="`/src/assets/img/carousel/${img}`"
-                                    :alt="`${img}`">
-
+                                <img src="`/src/assets/img/carousel/carousel-1.webp" alt="carousel-1">
+                                <img src="`/src/assets/img/carousel/carousel-2.webp" alt="carousel-2">
+                                <img src="`/src/assets/img/carousel/carousel-3.webp" alt="carousel-3">
+                                <img src="`/src/assets/img/carousel/carousel-4.webp" alt="carousel-4">
+                                <img src="`/src/assets/img/carousel/carousel-5.webp" alt="carousel-5">
+                                <img src="`/src/assets/img/carousel/carousel-6.webp" alt="carousel-6">
+                                <img src="`/src/assets/img/carousel/carousel-7.webp" alt="carousel-7">
+                                <img src="`/src/assets/img/carousel/carousel-8.webp" alt="carousel-8">
+                                <img src="`/src/assets/img/carousel/carousel-9.webp" alt="carousel-9">
+                                <img src="`/src/assets/img/carousel/carousel-10.webp" alt="carousel-10">
+                                <img src="`/src/assets/img/carousel/carousel-11.webp" alt="carousel-11">
+                                <img src="`/src/assets/img/carousel/carousel-12.webp" alt="carousel-12">
                             </div>
                         </div>
                     </div>

@@ -10,11 +10,11 @@ export default {
             isMobile: window.innerWidth < 768,
         }
     },
-    computed: {
-        selectVideo() {
-            return this.isMobile ? this.videoMobile : this.videoDesktop;
-        }
-    },
+    // computed: {
+    //     selectVideo() {
+    //         return this.isMobile ? this.videoMobile : this.videoDesktop;
+    //     }
+    // },
     mounted() {
         window.addEventListener("resize", () => {
             this.isMobile = window.innerWidth < 768;
@@ -26,7 +26,8 @@ export default {
 <template>
     <section id="hero">
         <video autoplay muted loop playsinline class="bg-video">
-            <source :src="`/src/assets/videos/${selectVideo}`" type="video/mp4">
+            <source v-if="isMobile" src="/src/assets/videos/bg-video-jeruncio-mobile.mp4" type="video/mp4">
+            <source v-else src="/src/assets/videos/bg-video-jeruncio-desktop.mp4" type="video/mp4">
         </video>
         <div class="h1-box">
             <h1 class="sr-only">CÍA. JERUNCIO</h1>
