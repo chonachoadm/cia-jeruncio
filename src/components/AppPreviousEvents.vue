@@ -142,7 +142,7 @@ export default {
             </div>
             <div class="sub-section">
                 <div class="p-4 mt-5 mb-xl-5 mt-xl-0  blur-animation">
-                    <h2>{{ $t('dataSheet.title') }}</h2>
+                    <h2 class="fs-1">{{ $t('dataSheet.title') }}</h2>
                 </div>
                 <div class="w-100 d-flex justify-content-center">
                     <div class="col-12 col-md-10 accordion-box gap-4 p-4 fade-animation">
@@ -170,6 +170,7 @@ section {
 .sub-section {
     width: 50%;
 }
+
 
 .overlay {
     border-image: fill 1 linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
