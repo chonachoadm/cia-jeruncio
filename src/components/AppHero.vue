@@ -5,16 +5,9 @@ export default {
     name: "AppHero",
     data() {
         return {
-            videoDesktop: "bg-video-jeruncio-desktop.mp4",
-            videoMobile: "bg-video-jeruncio-mobile.mp4",
             isMobile: window.innerWidth < 768,
         }
     },
-    // computed: {
-    //     selectVideo() {
-    //         return this.isMobile ? this.videoMobile : this.videoDesktop;
-    //     }
-    // },
     mounted() {
         window.addEventListener("resize", () => {
             this.isMobile = window.innerWidth < 768;
@@ -121,6 +114,14 @@ section::before {
 }
 
 @media(max-width: 768px) {
+    section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+
     .h1-box {
         display: flex;
         justify-content: center;

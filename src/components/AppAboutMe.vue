@@ -204,6 +204,10 @@ section {
 }
 
 @media(max-width: 768px) {
+    .waves {
+        background-attachment: scroll;
+    }
+
     .aboutme-text-box {
         padding-block: 5%;
 
@@ -245,8 +249,8 @@ section {
     }
 
     .aboutme-img2 {
-        top: -90%;
-        right: 10%;
+        top: -60%;
+        right: 5%;
         transform: rotate(-25deg);
     }
 

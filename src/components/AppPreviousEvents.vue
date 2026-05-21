@@ -259,6 +259,12 @@ section {
 
 
 @media (max-width: 768px) {
+    .waves {
+        background-attachment: scroll;
+        background-position: 35% bottom;
+        background-size: auto 115%;
+    }
+
     .accordion-box {
         padding: 0;
         border-width: 10px;

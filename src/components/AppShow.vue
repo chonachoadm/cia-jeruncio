@@ -54,45 +54,6 @@ export default {
                 {{ $t('show.dossierButton') }}
             </a>
         </div>
-
-
-
-        <!-- <div class="parent">
-            <div class="div1 mx-0 my-4 m-md-4">
-                <h3 class="px-0 py-4 p-md-4 blur-animation">
-                    {{ $t('show.subtitle') }}
-                </h3>
-            </div> 
-        <div class="div2 mx-0 my-4 m-md-4 position-relative">
-            <div class="p-4 text-show">
-                <p v-html="$t('show.text1')" class="fade-animation"></p>
-            </div>
-
-        </div>
-        <div class="div3 mx-0 my-4 m-md-4">
-            <div class="p-4 text-show">
-                <p v-html="$t('show.text2')" class="fade-animation"></p>
-            </div>
-        </div>
-        <div class="div4 mx-0 my-4 m-md-4">
-            <div class="p-4 text-show">
-                <p v-html="$t('show.text3')" class="fade-animation"></p>
-            </div>
-        </div>
-        <div class="div5 mx-0 my-4 m-md-4 position-relative">
-            <div class="p-4 text-show">
-                <p v-html="$t('show.text4')" class="fade-animation"></p>
-            </div>
-
-        </div>
-        <div class="div6 mx-0 my-4 m-md-4 position-relative blur-animation download-link-container">
-            <a :href="$t('show.dossierFile')" download="Jeruncio_Dossier.pdf" class="download-link">
-                {{ $t('show.dossierButton') }}
-            </a>
-            <AppDecoDownloadES v-if="locale === 'es'" />
-            <AppDecoDownloadEN v-else />
-        </div>
-        </div> -->
     </section>
 </template>
 
@@ -115,60 +76,6 @@ section {
     top: 0;
     left: -5%;
 }
-
-/* .parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    text-align: center;
-
-    margin-inline: min(3em, 4%);
-    padding-bottom: 5em;
-} */
-
-/* .div2 {
-    grid-area: 1 / 1 / 3 / 2;
-}
-
-.div3 {
-    grid-area: 2 / 2 / 4 / 3;
-}
-
-.div4 {
-    grid-area: 3 / 1 / 5 / 2;
-}
-
-.div5 {
-    grid-area: 4 / 2 / 6 / 3;
-}
-
-.div6 {
-    grid-area: 5 / 1 / 6 / 2;
-} */
-
-/* .text-show {
-    border: 15px solid transparent;
-    border-image-source: url("@/assets/img/patterns/animal-print-pattern.webp");
-    border-image-slice: 80;
-    border-image-repeat: round;
-
-    box-shadow: 0 0 5px black,
-        0 0 5px black inset;
-
-    background-image: url("@/assets/img/backgrounds/bg-show.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    height: fit-content;
-
-    font-size: 1.1em;
-} */
 
 .img-show-1 {
     width: 15%;
@@ -325,33 +232,9 @@ section {
 }
 
 @media (max-width: 768px) {
-    /* .parent {
-        display: block;
-    } */
-
-    /* .text-show {
-        border: 5px solid transparent;
-        border-image-source: url("@/assets/img/patterns/animal-print-pattern.webp");
-        border-image-slice: 30;
-        border-image-repeat: round;
-
-        box-shadow: 0 0 5px black,
-            0 0 5px black inset;
-
-        background-image: url("@/assets/img/backgrounds/bg-show.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        height: fit-content;
-
-        font-size: 1em;
-    } */
-
-    /* .download-link-container {
-        padding-bottom: 10em;
-    } */
+    section {
+        margin-top: 5rem;
+    }
 
     .img-show-2 {
         display: none;
@@ -359,6 +242,10 @@ section {
 
     .img-show-1 {
         display: none;
+    }
+
+    .roadmap-container {
+        padding-block: 3em;
     }
 
     .roadmap-canvas {

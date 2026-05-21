@@ -1,21 +1,34 @@
 <script>
+import carousel1 from '@/assets/img/carousel/carousel-1.webp'
+import carousel2 from '@/assets/img/carousel/carousel-2.webp'
+import carousel3 from '@/assets/img/carousel/carousel-3.webp'
+import carousel4 from '@/assets/img/carousel/carousel-4.webp'
+import carousel5 from '@/assets/img/carousel/carousel-5.webp'
+import carousel6 from '@/assets/img/carousel/carousel-6.webp'
+import carousel7 from '@/assets/img/carousel/carousel-7.webp'
+import carousel8 from '@/assets/img/carousel/carousel-8.webp'
+import carousel9 from '@/assets/img/carousel/carousel-9.webp'
+import carousel10 from '@/assets/img/carousel/carousel-10.webp'
+import carousel11 from '@/assets/img/carousel/carousel-11.webp'
+import carousel12 from '@/assets/img/carousel/carousel-12.webp'
+
 export default {
     name: "AppGallery",
     data() {
         return {
             images: [
-                "carousel-1.webp",
-                "carousel-2.webp",
-                "carousel-3.webp",
-                "carousel-4.webp",
-                "carousel-5.webp",
-                "carousel-6.webp",
-                "carousel-7.webp",
-                "carousel-8.webp",
-                "carousel-9.webp",
-                "carousel-10.webp",
-                "carousel-11.webp",
-                "carousel-12.webp",
+                carousel1,
+                carousel2,
+                carousel3,
+                carousel4,
+                carousel5,
+                carousel6,
+                carousel7,
+                carousel8,
+                carousel9,
+                carousel10,
+                carousel11,
+                carousel12,
             ],
             isMobile: window.innerWidth < 768
         }
@@ -50,18 +63,8 @@ export default {
                         <div v-for="(group, index) in groupedImages" :key="index" class="carousel-item"
                             :class="{ active: index === 0 }">
                             <div class="mx-auto d-flex justify-content-between gap-4">
-                                <img src="/src/assets/img/carousel/carousel-1.webp" alt="carousel-1">
-                                <img src="/src/assets/img/carousel/carousel-2.webp" alt="carousel-2">
-                                <img src="/src/assets/img/carousel/carousel-3.webp" alt="carousel-3">
-                                <img src="/src/assets/img/carousel/carousel-4.webp" alt="carousel-4">
-                                <img src="/src/assets/img/carousel/carousel-5.webp" alt="carousel-5">
-                                <img src="/src/assets/img/carousel/carousel-6.webp" alt="carousel-6">
-                                <img src="/src/assets/img/carousel/carousel-7.webp" alt="carousel-7">
-                                <img src="/src/assets/img/carousel/carousel-8.webp" alt="carousel-8">
-                                <img src="/src/assets/img/carousel/carousel-9.webp" alt="carousel-9">
-                                <img src="/src/assets/img/carousel/carousel-10.webp" alt="carousel-10">
-                                <img src="/src/assets/img/carousel/carousel-11.webp" alt="carousel-11">
-                                <img src="/src/assets/img/carousel/carousel-12.webp" alt="carousel-12">
+                                <img v-for="imagePath in group" :key="imagePath" :src="imagePath"
+                                    :alt="`carousel-${group.indexOf(imagePath)}`">
                             </div>
                         </div>
                     </div>
@@ -79,7 +82,7 @@ export default {
             </div>
         </div>
         <div class="px-4 see-more">
-            <button class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#galleryModal">
+            <button class="py-2 px-4 text-black" data-bs-toggle="modal" data-bs-target="#galleryModal">
                 {{ $t('gallery.more') }}
             </button>
         </div>

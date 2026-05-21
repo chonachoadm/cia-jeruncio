@@ -73,11 +73,11 @@ export default {
 </script>
 
 <template>
-    <button class="nav-toggle" @click="openNav = !openNav">
+    <button v-if="!openNav" class="fs-2 nav-toggle" @click="openNav = true">
         ☰
     </button>
     <nav class="nav-bar" :class="{ openMobileNav: openNav }">
-        <button class="nav-toggle" @click="openNav = !openNav">
+        <button v-if="openNav" class=" fs-2 nav-toggle" @click="openNav = false">
             X
         </button>
         <ul class="nav-list">
@@ -105,6 +105,7 @@ export default {
 <style scoped>
 .nav-toggle {
     display: none;
+    color: black;
 }
 
 .nav-bar {
